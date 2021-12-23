@@ -5,7 +5,6 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgb(253, 253, 176);
@@ -26,7 +25,6 @@
   width: calc(100% - 20px);
   height: calc(100% - 20px);
   background-color: #00b300;
-  text-align: center;
   display: grid;
   grid-template:
     "top        top         top          top      " 30px
@@ -37,10 +35,45 @@
     "bottom     bottom      bottom       bottom" 30px / 30px 6fr 6fr 30px;
   grid-gap: 3px;
   padding: 3px;
+  place-content: center;
+}
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee div {
+  width: 200%;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  left: 0;
+  overflow: hidden;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.marquee:hover div {
+  -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
+  animation-play-state: paused;
 }
 
 .board_tile_top {
   grid-area: top;
+  background-color: rgb(255, 255, 255);
+}
+
+.board_tile_bottom {
+  grid-area: bottom;
   background-color: rgb(255, 255, 255);
 }
 
@@ -90,11 +123,6 @@
   text-orientation: upright;
 }
 
-.board_tile_bottom {
-  grid-area: bottom;
-  background-color: rgb(255, 255, 255);
-}
-
 .board-talk {
   width: 50px;
   height: 50px;
@@ -108,7 +136,7 @@
   right: 100px;
   background-color: rgb(133, 31, 192);
   box-shadow: 0 0 2px 3px rgba(255, 255, 255, 0.5);
-  animation: flyicon 1.5s ease-in-out infinite;
+  animation: flyIcon 1.5s ease-in-out infinite;
 }
 
 .board-talk > i {

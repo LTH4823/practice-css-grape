@@ -1,4 +1,4 @@
-@keyframes flyicon {
+@keyframes flyIcon {
   0% {
     transform: none;
   }
@@ -24,20 +24,12 @@
   }
 }
 
-@keyframes leftMove {
+@keyframes marquee {
   0% {
     left: 0;
   }
+
   100% {
     left: -100%;
-  }
-}
-
-@keyframes rightMove {
-  0% {
-    right: 0;
-  }
-  100% {
-    right: -100%;
   }
 }
