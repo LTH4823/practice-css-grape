@@ -25,7 +25,7 @@
 .board {
   width: calc(100% - 20px);
   height: calc(100% - 20px);
-  background-color: cadetblue;
+  background-color: #95ff95;
   text-align: center;
   display: grid;
   grid-template:
@@ -36,6 +36,7 @@
     "left-three center-left center-right right-two" 50px
     "bottom     bottom      bottom       bottom" 30px / 30px 6fr 6fr 30px;
   grid-gap: 3px;
+  padding: 3px;
 }
 
 .board_tile_top {
@@ -84,6 +85,11 @@
   background-color: red;
 }
 
+.vertical-text {
+  writing-mode: tb-rl;
+  text-orientation: upright;
+}
+
 .board_tile_bottom {
   grid-area: bottom;
   background-color: rgb(133, 31, 192);
@@ -108,4 +114,9 @@
 .board-talk > i {
   font-size: 35px;
   color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.board-talk:hover > i {
+  color: rgb(156, 255, 89);
 }
