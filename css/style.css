@@ -1,2 +1,57 @@
 @import url(reset.css);
 @import url(moving.css);
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(253, 253, 176);
+}
+
+.board {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background-color: cadetblue;
+  display: grid;
+  grid-template:
+    "top        top         top          top      " 30px
+    "left-one   center-left center-right right-one" 5fr
+    "left-one   center-left center-right right-two" 50px
+    "left-two   center-left center-right right-two" 4fr
+    "left-three center-left center-right right-two" 50px
+    "bottom     bottom      bottom       bottom" 30px / 30px 6fr 6fr 30px;
+  grid-gap: 5px;
+}
+
+.board-title {
+  font-size: 100px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  text-align: center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+  font-family: initial;
+}
+
+.board-talk {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 80px;
+  right: 100px;
+  background-color: rgb(133, 31, 192);
+  box-shadow: 0 0 2px 3px rgba(255, 255, 255, 0.5);
+}
+
+.board-talk > i {
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+}
