@@ -34,6 +34,7 @@
   text-align: center;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
   font-family: initial;
+  animation: sizeupTitle 5s ease-in-out infinite;
 }
 
 .board-talk {
@@ -49,6 +50,7 @@
   right: 100px;
   background-color: rgb(133, 31, 192);
   box-shadow: 0 0 2px 3px rgba(255, 255, 255, 0.5);
+  animation: flyicon 1.5s ease-in-out infinite;
 }
 
 .board-talk > i {
