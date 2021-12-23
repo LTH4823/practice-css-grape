@@ -25,7 +25,7 @@
 .board {
   width: calc(100% - 20px);
   height: calc(100% - 20px);
-  background-color: #95ff95;
+  background-color: #00b300;
   text-align: center;
   display: grid;
   grid-template:
@@ -41,7 +41,7 @@
 
 .board_tile_top {
   grid-area: top;
-  background-color: red;
+  background-color: rgb(255, 255, 255);
 }
 
 .board_tile_center_left {
@@ -62,12 +62,12 @@
 
 .board_tile_left_one {
   grid-area: left-one;
-  background-color: red;
+  background-color: rgb(116, 255, 2);
 }
 
 .board_tile_left_two {
   grid-area: left-two;
-  background-color: red;
+  background-color: rgb(0, 225, 255);
 }
 
 .board_tile_left_three {
@@ -77,12 +77,12 @@
 
 .board_tile_right_one {
   grid-area: right-one;
-  background-color: red;
+  background-color: rgb(0, 255, 255);
 }
 
 .board_tile_right_two {
   grid-area: right-two;
-  background-color: red;
+  background-color: rgb(114, 53, 255);
 }
 
 .vertical-text {
@@ -92,7 +92,7 @@
 
 .board_tile_bottom {
   grid-area: bottom;
-  background-color: rgb(133, 31, 192);
+  background-color: rgb(255, 255, 255);
 }
 
 .board-talk {
