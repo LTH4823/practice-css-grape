@@ -23,3 +23,21 @@
     transform: scale(1.1);
   }
 }
+
+@keyframes leftMove {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes rightMove {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -100%;
+  }
+}
