@@ -1,5 +1,6 @@
 @import url(reset.css);
 @import url(moving.css);
+@import url(media.css);
 
 .main {
   width: 100vw;
